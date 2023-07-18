@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.flexBetween {
+  @apply flex items-center justify-between;
+}
+
+.flexCenter {
+  @apply flex items-center;
+}
+
+/* Dark Mode */
+.darkMode_buttons {
+  @apply text-xl cursor-pointer hover:text-orange-500;
+}
