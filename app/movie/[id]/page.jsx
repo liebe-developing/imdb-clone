@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+
+
 async function getMovie(movieId) {
   const response = await fetch(
     `https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.EMDB_API_KEY}&language=en-US`
@@ -7,6 +9,13 @@ async function getMovie(movieId) {
   return await response.json();
 }
 
+export async function generateMetadata({ params }) {
+  const movieId = params.id;
+  const movie = await getMovie(movieId);
+  return {
+    title: `IMDB clone | ${movie.title}`,
+  };
+}
 const MoviePage = async ({ params }) => {
   const movieId = params.id;
   const movie = await getMovie(movieId);

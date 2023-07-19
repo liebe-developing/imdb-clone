@@ -1,4 +1,11 @@
-import { Footer, Header, Navbar, Providers, SearchBox } from "@/components";
+import {
+  Footer,
+  Header,
+  Navbar,
+  ThemesProvider,
+  SearchBox,
+  Session,
+} from "@/components";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -12,14 +19,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Providers>
-          <Header />
-          <Navbar />
-          <SearchBox />
-          {children}
-          <Footer />
-        </Providers>
+      <body className={`${inter.className} relative`}>
+        <Session>
+          <ThemesProvider>
+            <Header />
+            <Navbar />
+            <SearchBox />
+            {children}
+            <Footer />
+          </ThemesProvider>
+        </Session>
       </body>
     </html>
   );

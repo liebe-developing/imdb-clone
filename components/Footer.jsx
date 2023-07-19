@@ -14,14 +14,14 @@ const FooterItems = [
 ];
 const Footer = () => {
   return (
-    <footer className="max-w-6xl sm:mx-auto p-4 mt-6">
+    <footer className="max-w-6xl mx-auto p-4 content-center w-full justify-center items-center">
       <div className="flex flex-col gap-2 justify-center items-center border-b pb-4">
         <Link href="/">
-          <h2 className="text-xl space-x-1.5">
+          <h2 className="text-lg space-x-1.5">
             <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg">
               IMDB
             </span>
-            <span className="text-xl hidden sm:inline">Clone</span>
+            <span className="text-lg hidden sm:inline">Clone</span>
           </h2>
         </Link>
         <div className="flex gap-8 mt-2.5">

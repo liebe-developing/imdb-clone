@@ -25,3 +25,18 @@ html {
 .social_icons {
   @apply rounded-2xl hover:opacity-80 bg-amber-100 dark:bg-transparent text-2xl p-0.5;
 }
+
+.social_buttons {
+  @apply flex items-center gap-3 dark:bg-gray-500 px-8 py-3 rounded-lg w-full justify-center;
+}
+.dropdown {
+  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[250px] flex flex-col gap-2 justify-start items-start;
+}
+
+.dropdown_link {
+  @apply text-sm text-gray-700 hover:text-gray-500 font-medium py-1;
+}
+
+.black_btn {
+  @apply rounded-xl border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-[#222] text-center text-sm flex items-center justify-center;
+}
