@@ -27,7 +27,7 @@ const MovieCard = ({ result }) => {
           </h2>
           <p className="flexCenter">
             {result.release_date || result.first_air_date}
-            <FiThumbsUp className="h-5" /> {result.vote_count}
+            <FiThumbsUp className="h-5 mr-1 ml-3" /> {result.vote_count}
           </p>
         </div>
       </Link>
