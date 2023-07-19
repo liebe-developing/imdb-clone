@@ -1,4 +1,4 @@
-import { Header, Navbar, Providers, SearchBox } from "@/components";
+import { Footer, Header, Navbar, Providers, SearchBox } from "@/components";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -16,8 +16,9 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header />
           <Navbar />
-          {/* <SearchBox /> */}
+          <SearchBox />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

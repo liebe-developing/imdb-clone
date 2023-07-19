@@ -21,3 +21,7 @@ html {
 .darkMode_buttons {
   @apply text-xl cursor-pointer hover:text-orange-500;
 }
+
+.social_icons {
+  @apply rounded-2xl hover:opacity-80 bg-amber-100 dark:bg-transparent text-2xl p-0.5;
+}
